@@ -1,36 +1,27 @@
-
 <div class="wrapper fadeInDown">
 	<div id="formContent2">
-
-
 		<div class="card">
 			<header class="card-header">
-				<a href="Connexion.html" class="float-right btn btn-outline-primary mt-1">Compte existant</a>
+				<a href="index.php?page=connexion" class="float-right btn btn-outline-primary mt-1">Compte existant</a>
 				<h4 class="card-title mt-2">Inscription</h4>
 			</header>
-
 			<article class="card-body">
-				<form method="POST" action="Inscription.php">
+				<form method="POST" action="index.php?page=inscription">
 					<div class="form-row">
 						<div class="col form-group">
 							<label>Nom</label>
 							<input type="text" class="form-control" placeholder="" name="nom">
-							<span style="color : red; font-size : 13px" >* <?php echo $nomErr; ?> </span>
 						</div> <!-- form-group end.// -->
 
 						<div class="col form-group">
 							<label>Prenom</label>
 							<input type="text" class="form-control" placeholder="" name="prenom">
-							<span style="color : red; font-size : 13px" >* <?php echo $prenomErr;?> </span>
 						</div> <!-- form-group end.// -->
 					</div> <!-- form-row end.// -->
-
-
 					<div class="form-group">
 						<label>Date de naissance</label>
 						<input type="date" class="form-control" max="" min="" name="date">
 					</div> <!-- form-group end.// -->
-
 					<div class="form-group">
 
 						<label class="form-check form-check-inline">
@@ -47,52 +38,39 @@
 							<input class="form-check-input" type="radio" name="gender" value="option2">
 							<span class="form-check-label"> M </span>
 						</label>
-						<span style="color : red; font-size : 13px" >* <?php echo $genderErr;?> </span>
-
 					</div> <!-- form-group end.// -->
-
-
 					<div class="form-group">
 						<label>Addresse mail</label>
 						<input type="mail" class="form-control" placeholder="Ex: mail@domaine.com" name="mail">
-						<span style="color : red; font-size : 13px" > <?php echo $mailErr;?> </span>
 					</div> <!-- form-group end.// -->
 
 					<div class="form-group">
 						<label>Adresse</label>
 						<input type="text" class="form-control" name="adresse"><br/>
-						<span style="color : red; font-size : 13px" >* <?php echo $adresseErr;?> </span>
 					</div> <!-- form-group end.// -->
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label>Code postal</label>
 							<input type="text" class="form-control" name="cp">
-							<span style="color : red; font-size : 13px" >* <?php echo $cpErr;?> </span>
 						</div> <!-- form-group end.// -->
 
 						<div class="form-group col-md-6">
 							<label>Ville</label>
 							<input type="text" class="form-control" name="ville">
-							<span style="color : red; font-size : 13px" >* <?php echo $villeErr;?> </span>
 						</div> <!-- form-group end.// -->
 					</div> <!-- form-row.// -->
 
 					<div class="form-group">
 						<label>Créer le mot de passe</label>
 						<input class="form-control" type="password" name="password"><br/>
-						<span style="color : red; font-size : 13px" >* <?php echo $mdpErr;?> </span>
 					</div> <!-- form-group end.// -->
 
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary btn-block"> S'inscrire </button>
 					</div> <!-- form-group// -->
-
 				</form>
 			</article> <!-- card-body end .// -->
 		</div> <!-- card.// -->
-
-
-
 	</div><!--form content-->
 </div><!--wrapper fadeInDown-->

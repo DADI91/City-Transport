@@ -8,7 +8,7 @@ if(!empty($_GET['page'])) {
 			require_once("Controllers/accueil.php");
 			break;
 		case 'connexion':
-			require_once("Controllers/accueil.php");
+			require_once("Controllers/connexion.php");
 			break;
 		case 'etat_trafic':
 			require_once("Controllers/etat_trafic.php");
