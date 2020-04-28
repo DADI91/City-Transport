@@ -10,7 +10,7 @@ if(!empty($_GET['page'])) {
 		case 'connexion':
 			require_once("Controllers/connexion.php");
 			break;
-		case 'etat_trafic':
+		case 'trafic':
 			require_once("Controllers/etat_trafic.php");
 			break;
 		case 'inscription':
