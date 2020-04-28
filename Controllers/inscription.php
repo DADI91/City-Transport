@@ -18,27 +18,12 @@ if($_POST) {
 	$ville = $_POST['ville'];
 	$mdp = $_POST['password'];
 	$mdp2 = $_POST['mdp'];
-	if (preg_match('#[a-zA-Z]+#', $nom)) {
-		if (preg_match('#[a-zA-Z]+#', $prenom)) {
-			if(preg_match('#[a-zA-Z0-9]+ [a-zA-Z0-9] + [.] {1,1} [a-zA-Z]+#', $mail)) {
-				if(!empty($adresse)) {
-					if (preg_match('#[a-zA-Z0-9]+#', $password)) {
-						//Si tout est ok, on inscrit l"utilisateur
-					} else {
-						echo 'Mot de passe non conforme';
-					}
-				} else {
-					echo "L'adresse est vide, veuillez remplir ce champ";
-				}
-			} else {
-				echo "L'adresse n'est pas bonne";
-			}
-		} else {
-			echo 'Veuillez retaper le prenom.';
-		}
+	if(preg_match('#[a-zA-Z0-9]+ [a-zA-Z0-9] + [.] {1,1} [a-zA-Z]+#', $mail)) {
+		
 	} else {
-		echo 'Veuillez retaper le nom. ';
+		echo "L'adresse n'est pas bonne";
 	}
+
 } else {
 	require_once("Views/inscription.html");
 }
